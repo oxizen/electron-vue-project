@@ -1,0 +1,21 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  "productName": "Example",
+  "appId": "co.bigpi.pc-cafe.example",
+  "files": [
+    "dist/**/*",
+  ],
+  "directories": {
+    "output": "release/${version}",
+  },
+  "win": {
+    "icon": "icons/icon.ico",
+    "artifactName": "${productName}-${version}-${os}.${ext}",
+  },
+  "nsis": {
+    "createDesktopShortcut": true,
+    "artifactName": "${productName}-${version}.${ext}"
+  },
+}

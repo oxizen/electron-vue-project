@@ -1,0 +1,20 @@
+@import 'base.less';
+@import 'proj.less';
+
+body { .bgc(@app-bg); .c(#fff); .crop; .m; }
+
+#app { .h(100vh); .flex; .flex-column;
+  .val(--header-height, 40);
+}
+
+* {
+  &::-webkit-scrollbar { .wh(6); }
+  &::-webkit-scrollbar-track { .bgc(transparent); }
+  &::-webkit-scrollbar-thumb { .bgc(#666); .br(2); }
+  &::-webkit-scrollbar-corner { .bgc(transparent); }
+}
+
+@keyframes rotation {
+  0% { .t-r(0); }
+  100% { .t-r(360deg); }
+}
