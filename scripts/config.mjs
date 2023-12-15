@@ -1,8 +1,8 @@
 import { join } from 'path';
 
 /**
- * @param {AppModule} moduleName;
  * @return {InlineConfig}
+ * @param {AppModule} moduleName
  */
 export const baseBuildConfig = moduleName => {
   return {

@@ -4,7 +4,7 @@ type LogLevel = import('vite').LogLevel;
 
 type EventKey = 'closeWindow';
 type InvokeKey = 'quitApp' | 'getOne' | 'getTwo';
-type AppModule = 'renderer' | 'main' | 'preload' | 'common';
+type AppModule = 'renderer' | 'main' | 'preload';
 
 declare namespace Electron {
   export interface IpcMain {
